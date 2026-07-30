@@ -1,0 +1,54 @@
+/* Vardaan Tour — Color system
+   ---------------------------------------------------------------
+   Derived from the parent brand, Vardaan Rent a Car (VRC): vivid
+   wing-RED + deep NAVY indigo on white. Red is the single brand
+   voltage — it carries primary CTAs, the search orb, the save/heart
+   state, and the brand accent. Navy is the trust/secondary colour:
+   headline ink, wordmark, taglines, and stat figures. Most surfaces
+   are ~90% white + navy-ink with one or two red moments.
+
+   Sub-brand accents (Char Dham maroon, Himalaya teal, Temple gold)
+   are scoped to premium / sub-product contexts and never appear in
+   mainline marketing. */
+
+:root {
+  /* ---- Brand & accent ---- */
+  --color-primary: #db241d;          /* Wing red — the single brand voltage */
+  --color-primary-active: #b51913;   /* press / pointer-down */
+  --color-primary-disabled: #f4cecc; /* pale tint on disabled CTAs */
+
+  --color-navy: #28166f;             /* Deep navy — secondary brand / trust colour */
+  --color-navy-active: #1c0f54;      /* navy press state */
+
+  --color-char-dham: #6e1e22;        /* sub-brand: Char Dham Yatra (premium) */
+  --color-himalaya: #1f5e6b;         /* sub-brand: high-altitude trek line */
+  --color-gold: #b8862f;             /* premium "Vardaan Plus" trim accent */
+
+  /* ---- Surface ---- */
+  --color-canvas: #ffffff;           /* default page floor; no dark mode on web */
+  --color-surface-soft: #f6f5fa;     /* lightest fill: disabled fields, hover bands */
+  --color-surface-strong: #eeedf4;   /* heavier fill: circular icon-button surface */
+
+  /* ---- Hairlines & borders ---- */
+  --color-hairline: #e3e1ec;         /* default 1px border tone */
+  --color-hairline-soft: #eeedf3;    /* lighter editorial divider */
+  --color-border-strong: #c2bfd2;    /* disabled outline buttons, focused input outline */
+
+  /* ---- Text ---- */
+  --color-ink: #1d1a33;              /* dominant text — deep navy-charcoal, never pure black */
+  --color-body: #44415a;             /* secondary running text in long-form copy */
+  --color-muted: #6a6781;            /* sub-labels, inactive tabs, "View all" links */
+  --color-muted-soft: #9794ab;       /* disabled link text, used sparingly */
+  --color-star-rating: #1d1a33;      /* ratings render in INK, not gold — deliberate restraint */
+  --color-on-primary: #ffffff;       /* white text on red CTAs */
+
+  /* ---- Semantic ---- */
+  --color-success: #1f7a4d;          /* "Seats available", confirmed states */
+  --color-error: #c0341d;            /* inline form-validation error text */
+  --color-error-hover: #a32811;      /* darkens on link hover */
+  --color-legal-link: #2a6fb0;       /* inline links inside legal copy only */
+
+  /* ---- Scrim ---- */
+  --color-scrim: #000000;            /* modal backdrop base; applied at 50% opacity */
+  --scrim-opacity: 0.5;              /* @kind other */
+}

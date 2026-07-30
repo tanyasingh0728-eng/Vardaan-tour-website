@@ -1,0 +1,21 @@
+/* Vardaan Tour — Spacing system
+   Base unit 4px with a 2px micro-step. Major page bands breathe at
+   64px (section); card grids compress to 16px gutters so the
+   marketplace reads dense below an open hero. */
+
+:root {
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-base: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-section: 64px;
+
+  /* Containers */
+  --container-editorial: 1280px; /* homepage & editorial */
+  --container-detail: 1080px;    /* package detail (keeps banner + rail readable) */
+  --container-max: 1440px;       /* hard cap on wide search/listing pages */
+}

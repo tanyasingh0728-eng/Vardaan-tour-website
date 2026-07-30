@@ -1,0 +1,11 @@
+/* Vardaan Tour — Corner radii
+   Soft shape language: nothing hard-cornered except the body grid.
+   Buttons 8px, cards ~14px, search bar & save hearts fully pill. */
+
+:root {
+  --radius-sm: 8px;     /* buttons, inputs */
+  --radius-md: 14px;    /* package cards, host cards, reservation card */
+  --radius-lg: 20px;    /* large media panels */
+  --radius-xl: 32px;    /* category strip cells */
+  --radius-full: 9999px;/* search bar, orbs, hearts, pills, badges */
+}

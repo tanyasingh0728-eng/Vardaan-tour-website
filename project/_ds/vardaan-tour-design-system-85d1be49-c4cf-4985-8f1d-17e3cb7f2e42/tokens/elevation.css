@@ -1,0 +1,16 @@
+/* Vardaan Tour — Elevation
+   Essentially ONE shadow tier plus the flat baseline. Depth comes from
+   photography, white-on-white surface separation, and rounded-corner
+   clipping — not from layered shadows. */
+
+:root {
+  /* The single shadow definition in the entire system.
+     Applied to hover-floated cards, the resting search bar, and
+     dropdown menus (account, language, date picker). */
+  --shadow-float:
+    rgba(0, 0, 0, 0.02) 0 0 0 1px,
+    rgba(0, 0, 0, 0.04) 0 2px 6px 0,
+    rgba(0, 0, 0, 0.10) 0 4px 8px 0;
+
+  --shadow-none: none;
+}

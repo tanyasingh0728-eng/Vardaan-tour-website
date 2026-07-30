@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tour packages — Vardaan Tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/colors.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/typography.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/radii.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/styles.css">
+<link rel="stylesheet" href="css/site.css">
+<style>
+.filter-bar{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:0 0 8px;}
+.fbtn{font-family:var(--font-sans);font-size:15px;font-weight:600;color:var(--color-muted);background:none;
+  border:none;cursor:pointer;padding:8px 4px;border-bottom:2px solid transparent;transition:color .15s;}
+.fbtn:hover{color:var(--color-ink);}
+.fbtn.active{color:var(--color-ink);border-bottom-color:var(--accent);}
+.pkg-note{font-size:13px;color:var(--color-muted);margin-top:8px;}
+</style>
+</head>
+<body data-page="packages">
+<header data-site-header></header>
+
+<section class="page-banner">
+  <div class="bg"><img src="https://picsum.photos/seed/pkgbanner/1800/500" alt=""></div>
+  <div class="container inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> · Tour packages</div>
+    <h1>Pilgrimage packages</h1>
+    <p>Curated yatras across Uttarakhand — every package includes transport, trusted stays, guided darshan, and on-ground support. Pricing varies by season and group size, so prices are shared on enquiry.</p>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="container">
+    <div class="filter-bar" id="filterBar">
+      <button class="fbtn active" data-cat="all">All yatras</button>
+      <button class="fbtn" data-cat="chardham">Char Dham & Do Dham</button>
+      <button class="fbtn" data-cat="single">Single dham</button>
+      <button class="fbtn" data-cat="trek">Treks & temples</button>
+      <button class="fbtn" data-cat="kumaon">Offbeat Kumaon</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="pkg-grid pkg-grid--3" id="pkgGrid">
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="adi-kailash-om-parvat.html" data-p-image="assets/packages/cards/adi-kailash-om-parvat.jpg" data-p-title="Adi Kailash & Om Parvat" data-p-region="Pithoragarh, Uttarakhand" data-p-meta="6 nights · High altitude" data-props='{"badge":{"variant":"premium","label":"Premium"}}'></div>
+      <div class="pkg-item" data-cat="chardham" data-ds="PackageCard" data-href="package-detail.html" data-p-image="assets/packages/cards/chardham-yatra.jpg" data-p-title="Char Dham Yatra" data-p-region="Yamunotri · Gangotri · Kedarnath · Badrinath" data-p-meta="11 nights · Price on request" data-props='{"badge":{"variant":"favourite","label":"Most loved"}}'></div>
+      <div class="pkg-item" data-cat="chardham" data-ds="PackageCard" data-href="do-dham-yatra.html" data-p-image="assets/packages/cards/do-dham.jpg" data-p-title="Do Dham Yatra" data-p-region="Kedarnath & Badrinath" data-p-meta="7 nights · Price on request" data-props='{"badge":{"variant":"new","label":"New"}}'></div>
+      <div class="pkg-item" data-cat="single" data-ds="PackageCard" data-href="kedarnath-dham-yatra.html" data-p-image="assets/packages/cards/kedarnath.jpg" data-p-title="Kedarnath Dham Yatra" data-p-region="Rudraprayag, Uttarakhand" data-p-meta="5 nights · Helicopter option" data-props='{"badge":{"variant":"favourite","label":"Tour favourite"}}'></div>
+      <div class="pkg-item" data-cat="single" data-ds="PackageCard" data-href="badrinath-darshan.html" data-p-image="assets/packages/cards/badrinath.jpg" data-p-title="Badrinath Darshan" data-p-region="Chamoli, Uttarakhand" data-p-meta="4 nights · incl. Mana village"></div>
+      <div class="pkg-item" data-cat="chardham" data-ds="PackageCard" data-href="panch-kedar-tour.html" data-p-image="assets/packages/cards/panch-kedar.jpg" data-p-title="Panch Kedar Tour" data-p-region="Garhwal Himalaya" data-p-meta="12 nights · Moderate trek"></div>
+      <div class="pkg-item" data-cat="single" data-ds="PackageCard" data-href="gangotri-yamunotri.html" data-p-image="assets/packages/cards/gangotri-yamunotri.jpg" data-p-title="Gangotri & Yamunotri" data-p-region="Uttarkashi, Uttarakhand" data-p-meta="6 nights · Small group"></div>
+      <div class="pkg-item" data-cat="trek" data-ds="PackageCard" data-href="haridwar-rishikesh.html" data-p-image="assets/packages/cards/haridwar-rishikesh.jpg" data-p-title="Haridwar & Rishikesh" data-p-region="Ganga aarti · temples · yoga" data-p-meta="4 nights · Wellness"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="kumaon-darshan.html" data-p-image="assets/packages/cards/kumaon-darshan.jpg" data-p-title="Kumaon Darshan" data-p-region="Nainital · Almora · Pithoragarh" data-p-meta="3 nights · Ancient temples"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="munsiari.html" data-p-image="assets/packages/cards/munsiari.jpg" data-p-title="Munsiari" data-p-region="Pithoragarh, Uttarakhand" data-p-meta="4 nights · Panchachuli views"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="ranikhet.html" data-p-image="assets/packages/cards/ranikhet.jpg" data-p-title="Ranikhet" data-p-region="Almora, Uttarakhand" data-p-meta="2 nights · Cantonment hill town"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="kausani.html" data-p-image="assets/packages/cards/kausani.jpg" data-p-title="Kausani" data-p-region="Bageshwar, Uttarakhand" data-p-meta="2 nights · Himalayan panorama"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="gwaldam.html" data-p-image="assets/packages/cards/gwaldam.jpg" data-p-title="Gwaldam" data-p-region="Chamoli, Uttarakhand" data-p-meta="2 nights · Apple orchards"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="mukteshwar.html" data-p-image="assets/packages/cards/mukteshwar.jpg" data-p-title="Mukteshwar" data-p-region="Nainital, Uttarakhand" data-p-meta="2 nights · Weekend getaway"></div>
+      <div class="pkg-item" data-cat="kumaon" data-ds="PackageCard" data-href="lohaghat.html" data-p-image="assets/packages/cards/lohaghat.jpg" data-p-title="Lohaghat" data-p-region="Champawat, Uttarakhand" data-p-meta="2 nights · Quiet hill town"></div>
+    </div>
+    <p class="pkg-note" style="text-align:center;margin-top:24px">Don't see the route you have in mind? We build custom yatras too.</p>
+  </div>
+</section>
+
+<section class="section--tight" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <div class="bg"><img src="https://picsum.photos/seed/pkgcta/1600/500" alt=""></div>
+      <div class="inner">
+        <div>
+          <h2>Not sure which yatra is right for your family?</h2>
+          <p>Tell us who's travelling and when — we'll recommend the best route and share pricing.</p>
+        </div>
+        <div class="hero-actions" style="margin:0">
+          <a class="v-btn v-btn--primary v-btn--lg" href="tel:+919318400926">Call +91 93184 00926</a>
+          <a class="v-btn v-btn--ghost-light v-btn--lg" href="contact.html">Enquire now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer data-site-footer></footer>
+<div id="tweaks-root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="_ds/vardaan-tour-design-system-85d1be49-c4cf-4985-8f1d-17e3cb7f2e42/_ds_bundle.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/ds-mount.js"></script>
+<script>
+(function () {
+  var bar = document.getElementById("filterBar");
+  var items = document.querySelectorAll(".pkg-item");
+  if (!bar) return;
+  function applyFilter(cat) {
+    bar.querySelectorAll(".fbtn").forEach(function (x) {
+      x.classList.toggle("active", x.getAttribute("data-cat") === cat);
+    });
+    items.forEach(function (it) {
+      it.style.display = (cat === "all" || it.getAttribute("data-cat") === cat) ? "" : "none";
+    });
+  }
+  bar.addEventListener("click", function (e) {
+    var b = e.target.closest(".fbtn");
+    if (!b) return;
+    applyFilter(b.getAttribute("data-cat"));
+  });
+  var urlCat = new URLSearchParams(location.search).get("cat");
+  if (urlCat && bar.querySelector('.fbtn[data-cat="' + urlCat + '"]')) {
+    applyFilter(urlCat);
+  }
+})();
+</script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="js/tweaks-panel.jsx"></script>
+<script type="text/babel">
+const { useTweaks, TweaksPanel, TweakSection, TweakColor } = window;
+function App() {
+  const [t, setTweak] = useTweaks({ accent: "#db241d" });
+  React.useEffect(() => { document.body.style.setProperty("--accent", t.accent); }, [t.accent]);
+  return (
+    <TweaksPanel>
+      <TweakSection label="Brand accent" />
+      <TweakColor label="Accent" value={t.accent} options={["#db241d", "#28166f", "#6e1e22"]} onChange={(v) => setTweak("accent", v)} />
+    </TweaksPanel>
+  );
+}
+ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<App />);
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+/* Build: inline all same-origin CSS/JS + local logo data-URI into self-contained
+   pages at project root. Source pages live in src/, output to root.
+   Re-run the run_script inliner after editing any src/ file or shared asset. */

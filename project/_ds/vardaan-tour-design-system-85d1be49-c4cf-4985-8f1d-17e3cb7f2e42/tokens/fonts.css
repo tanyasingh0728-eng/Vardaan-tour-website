@@ -1,0 +1,21 @@
+/* Vardaan Tour typeface.
+   ---------------------------------------------------------------
+   The brand voice runs on ONE humanist family across display, body,
+   UI, and microcopy — modest weights (400–700), letting Himalayan
+   photography carry the visual heft.
+
+   SUBSTITUTION NOTE: the intended licensed face is a warm humanist
+   sans with Devanagari + Latin coverage. Until the licensed binaries
+   are supplied, we ship "Mukta" (Indian Type Foundry, SIL OFL) from
+   Google Fonts — it shares the open aperture, tall x-height, and
+   bilingual coverage the brand needs. Swap the @import below for
+   local @font-face rules once licensed files land in assets/fonts/. */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-sans: "Mukta", "Hind", -apple-system, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+  /* No separate display family — one variable-weight family carries the scale. */
+  --font-display: var(--font-sans);
+}

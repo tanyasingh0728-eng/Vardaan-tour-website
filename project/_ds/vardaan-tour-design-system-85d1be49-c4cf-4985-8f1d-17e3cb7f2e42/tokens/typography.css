@@ -1,0 +1,62 @@
+/* Vardaan Tour — Typography scale
+   ---------------------------------------------------------------
+   Display weights stay MODEST. The homepage h1 sits at 28px/700 and
+   tucks under the search bar — photography and the destination grid
+   carry hierarchy. The single typographically loud moment in the whole
+   system is the rating display (64px/700) on package detail pages.
+
+   Each token is exposed as three vars: -size, -weight, -line, plus a
+   ready-to-use shorthand class under .type-* for specimen cards. */
+
+:root {
+  --font-sans: "Mukta", "Hind", -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+
+  /* Rating display — the loudest moment in the system */
+  --t-rating-size: 64px; --t-rating-weight: 700; --t-rating-line: 1.1; /* @kind other */
+  --t-rating-tracking: -1px; /* @kind other */
+
+  /* Display */
+  --t-display-xl-size: 28px; --t-display-xl-weight: 700; --t-display-xl-line: 1.43; /* @kind other */
+  --t-display-xl-tracking: 0; /* @kind other */
+  --t-display-lg-size: 22px; --t-display-lg-weight: 500; --t-display-lg-line: 1.18; /* @kind other */
+  --t-display-lg-tracking: -0.44px; /* @kind other */
+  --t-display-md-size: 21px; --t-display-md-weight: 700; --t-display-md-line: 1.43; /* @kind other */
+  --t-display-md-tracking: 0; /* @kind other */
+  --t-display-sm-size: 20px; --t-display-sm-weight: 600; --t-display-sm-line: 1.20; /* @kind other */
+  --t-display-sm-tracking: -0.18px; /* @kind other */
+
+  /* Titles */
+  --t-title-md-size: 16px; --t-title-md-weight: 600; --t-title-md-line: 1.25; /* @kind other */
+  --t-title-sm-size: 16px; --t-title-sm-weight: 500; --t-title-sm-line: 1.25; /* @kind other */
+
+  /* Body */
+  --t-body-md-size: 16px; --t-body-md-weight: 400; --t-body-md-line: 1.5;  /* @kind other */
+  --t-body-sm-size: 14px; --t-body-sm-weight: 400; --t-body-sm-line: 1.43; /* @kind other */
+
+  /* Captions & micro */
+  --t-caption-size: 14px;     --t-caption-weight: 500; --t-caption-line: 1.29; /* @kind other */
+  --t-caption-sm-size: 13px;  --t-caption-sm-weight: 400; --t-caption-sm-line: 1.23; /* @kind other */
+  --t-badge-size: 11px;       --t-badge-weight: 600; --t-badge-line: 1.18; /* @kind other */
+  --t-micro-label-size: 12px; --t-micro-label-weight: 700; --t-micro-label-line: 1.33; /* @kind other */
+  --t-uppercase-tag-size: 8px; --t-uppercase-tag-weight: 700; --t-uppercase-tag-line: 1.25; /* @kind other */
+  --t-uppercase-tag-tracking: 0.32px; /* @kind other */
+
+  /* Buttons & links */
+  --t-button-md-size: 16px; --t-button-md-weight: 500; --t-button-md-line: 1.25; /* @kind other */
+  --t-button-sm-size: 14px; --t-button-sm-weight: 500; --t-button-sm-line: 1.29; /* @kind other */
+  --t-link-size: 14px;      --t-link-weight: 400; --t-link-line: 1.43; /* @kind other */
+  --t-nav-link-size: 16px;  --t-nav-link-weight: 600; --t-nav-link-line: 1.25; /* @kind other */
+}
+
+/* Convenience classes used by specimen cards & kits */
+.type-rating     { font: var(--t-rating-weight) var(--t-rating-size)/var(--t-rating-line) var(--font-sans); letter-spacing: var(--t-rating-tracking); }
+.type-display-xl { font: var(--t-display-xl-weight) var(--t-display-xl-size)/var(--t-display-xl-line) var(--font-sans); }
+.type-display-lg { font: var(--t-display-lg-weight) var(--t-display-lg-size)/var(--t-display-lg-line) var(--font-sans); letter-spacing: var(--t-display-lg-tracking); }
+.type-display-md { font: var(--t-display-md-weight) var(--t-display-md-size)/var(--t-display-md-line) var(--font-sans); }
+.type-display-sm { font: var(--t-display-sm-weight) var(--t-display-sm-size)/var(--t-display-sm-line) var(--font-sans); letter-spacing: var(--t-display-sm-tracking); }
+.type-title-md   { font: var(--t-title-md-weight) var(--t-title-md-size)/var(--t-title-md-line) var(--font-sans); }
+.type-title-sm   { font: var(--t-title-sm-weight) var(--t-title-sm-size)/var(--t-title-sm-line) var(--font-sans); }
+.type-body-md    { font: var(--t-body-md-weight) var(--t-body-md-size)/var(--t-body-md-line) var(--font-sans); }
+.type-body-sm    { font: var(--t-body-sm-weight) var(--t-body-sm-size)/var(--t-body-sm-line) var(--font-sans); }
+.type-caption    { font: var(--t-caption-weight) var(--t-caption-size)/var(--t-caption-line) var(--font-sans); }
+.type-uppercase-tag { font: var(--t-uppercase-tag-weight) var(--t-uppercase-tag-size)/var(--t-uppercase-tag-line) var(--font-sans); letter-spacing: var(--t-uppercase-tag-tracking); text-transform: uppercase; }
