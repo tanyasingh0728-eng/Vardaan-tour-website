@@ -10,6 +10,21 @@
 
   gtag('config', 'AW-18515098438');
 </script>
+<!-- Event snippet for Website lead conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18515098438/t-mKCNqK-6YdEMb2l_xE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — Vardaan Tour</title>
@@ -556,6 +571,7 @@ h1,h2,h3,h4,p{margin:0;text-wrap:pretty;}
   <div class="container">
     <div class="contact-grid">
       <!-- FORM -->
+       <button type="submit" onclick="gtag_report_conversion();">Submit</button>
       <div class="form-card">
         <h2 class="h-sub navy" style="margin-bottom:6px">Send us an enquiry</h2>
         <p class="muted" style="font-size:15px;margin-bottom:22px">Tell us a little about your trip — we'll get back within a day with suggestions and pricing.</p>
