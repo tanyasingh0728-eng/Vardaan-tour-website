@@ -77,7 +77,7 @@
       '</div>' +
       '<div class="footer-bottom"><span>© 2026 Vardaan Tour — a unit of Vardaan Rent a Car (VRC).</span>' +
         '<span>Your sacred journey, handled with care.</span>' +
-        '<span>Destination photography: Arpita Tripathy, Neilsatyam, Geet Arts, Sutharsan Shekhar, AaS, Athulvis, Varun Shiv Kapur, McKay Savage, Karz09, Fowler&amp;fowler, Kcsr.ntl, Bheinskitang, Harshit SR, Prateek as a traveller, ShalinishuklaV, Shobhit Gosain, Bodhisattwa, Ms Sarah Welch, Atudu, Sanjeev travelgrapher, Ekabhishek, Yogabrata Chakraborty, AverageGuyPU, Lalit.bhandari86, Nitin Maletha, Kanishkapant98, ArmouredCyborg, solarshakti, UnpetitproleX, Subhapal3187, Biswajit Majumdar, Vaibhav78545, Sanjoyg, Himanshu Punetha, Ashish Gupta, Sneha G Gupta — Wikimedia Commons (CC BY / CC BY-SA); Bhupendra Singh Bhandari (Unsplash), Dinesh Verma (Pexels)</span></div>' +
+        '<span>Destination photography: Arpita Tripathy, Neilsatyam, Geet Arts, Sutharsan Shekhar, AaS, Athulvis, Varun Shiv Kapur, McKay Savage, Karz09, Fowler&amp;fowler, Kcsr.ntl, Bheinskitang, Harshit SR, Prateek as a traveller, ShalinishuklaV, Shobhit Gosain, Bodhisattwa, Ms Sarah Welch, Atudu, Sanjeev travelgrapher, Ekabhishek, Yogabrata Chakraborty, AverageGuyPU, Lalit.bhandari86, Nitin Maletha, Kanishkapant98, ArmouredCyborg, solarshakti, UnpetitproleX, Subhapal3187, Biswajit Majumdar, Vaibhav78545, Sanjoyg, Himanshu Punetha, Ashish Gupta, Sneha G Gupta — Wikimedia Commons (CC BY / CC BY-SA); Bhupendra Singh Bhandari, Aditya Siva, Meriç Dağlı (Unsplash); Dinesh Verma, Frank van Dijk, Hemant Singh Chauhan, Tony Zebastian (Pexels)</span></div>' +
       '</div>';
   }
 
