@@ -571,7 +571,6 @@ h1,h2,h3,h4,p{margin:0;text-wrap:pretty;}
   <div class="container">
     <div class="contact-grid">
       <!-- FORM -->
-       <button type="submit" onclick="gtag_report_conversion();">Submit</button>
       <div class="form-card">
         <h2 class="h-sub navy" style="margin-bottom:6px">Send us an enquiry</h2>
         <p class="muted" style="font-size:15px;margin-bottom:22px">Tell us a little about your trip — we'll get back within a day with suggestions and pricing.</p>
@@ -3028,6 +3027,13 @@ __ds_ns.SearchBar = __ds_scope.SearchBar;
   if (!form) return;
   var waLink = document.getElementById("formDoneWaLink");
 
+  // Count clicks on call links as phone-call conversions
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (!a || a.hasAttribute("onclick") || !window.gtag) return;
+    gtag('event', 'conversion', {'send_to': 'AW-18515098438/t-mKCNqK-6YdEMb2l_xE'});
+  });
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -3046,6 +3052,8 @@ __ds_ns.SearchBar = __ds_scope.SearchBar;
 
     var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
     if (waLink) waLink.href = url;
+
+    if (window.gtag) gtag('event', 'conversion', {'send_to': 'AW-18515098438/t-mKCNqK-6YdEMb2l_xE'});
 
     form.style.display = "none";
     document.getElementById("formDone").style.display = "block";
