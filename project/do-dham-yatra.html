@@ -607,6 +607,29 @@ h1,h2,h3,h4,p{margin:0;text-wrap:pretty;}
 .reserve-price{font-size:22px;font-weight:700;color:var(--color-navy);}
 .reserve-card .field{margin-bottom:12px;}
 .excl li{color:var(--color-body);}
+/* Google review */
+.review-strip{display:block;margin-bottom:8px;color:inherit;}
+.review-label{display:flex;align-items:center;gap:8px;margin-bottom:10px;font-size:12px;font-weight:700;letter-spacing:.6px;
+  text-transform:uppercase;color:var(--color-muted);}
+.review-label .stars,.review-head .stars{color:#FBBC04;font-size:13px;letter-spacing:1px;}
+.review-card{position:relative;margin:0;background:#fff;border:1px solid rgba(29,26,51,.08);border-radius:14px;padding:12px 14px;
+  box-shadow:0 1px 2px rgba(29,26,51,.04),0 6px 18px rgba(29,26,51,.07);transition:box-shadow .2s ease,transform .2s ease;}
+.review-strip:hover .review-card,.review-strip:focus-visible .review-card{transform:translateY(-2px);
+  box-shadow:0 2px 4px rgba(29,26,51,.05),0 12px 28px rgba(29,26,51,.12);}
+.review-strip:focus-visible{outline:none;}
+.review-strip:focus-visible .review-card{outline:2px solid var(--color-navy);outline-offset:2px;}
+.review-shot{width:100%;height:auto;}
+.review-text{display:none;margin:0;}
+.review-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px;}
+.review-head strong{font-size:15px;color:var(--color-ink);}
+.review-text p{font-size:14px;line-height:1.55;color:var(--color-ink);}
+.review-more{position:absolute;right:14px;bottom:12px;font-size:13px;font-weight:600;color:#1a73e8;}
+.review-strip:hover .review-more{text-decoration:underline;}
+@media (max-width:767.98px){
+  .review-shot{display:none;}
+  .review-text{display:block;}
+  .review-more{position:static;display:block;margin-top:6px;}
+}
 @media (max-width:760px){.gallery{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto;}.gallery a:first-child{grid-column:1/3;height:220px;}.gallery a{height:130px;}}
 </style>
 </head>
@@ -640,6 +663,17 @@ h1,h2,h3,h4,p{margin:0;text-wrap:pretty;}
   <div class="container container--detail">
     <div class="detail-grid">
       <div>
+        <a class="review-strip" href="https://share.google/5flBse49kx3OmZwuT" target="_blank" rel="noopener noreferrer">
+          <div class="review-label"><span class="stars" aria-hidden="true">★★★★★</span> What our travellers say on Google</div>
+          <figure class="review-card">
+            <img class="review-shot" src="assets/packages/dodham/review-gaurav.png" width="1336" height="362" loading="lazy" alt="5-star Google review by Gaurav Singh Pharswan: Superb experience. Transparent pricing, no hassle, very well-maintained Innova. What I appreciated most was our driver's strict road discipline never touched his mobile phone while driving on mountain curves, never oversped, and remained calm even in traffic jams near Devprayag. Best tour operator for Uttarakhand.">
+            <blockquote class="review-text">
+              <div class="review-head"><strong>Gaurav Singh Pharswan</strong><span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></div>
+              <p>Superb experience. Transparent pricing, no hassle, very well-maintained Innova. What I appreciated most was our driver's strict road discipline never touched his mobile phone while driving on mountain curves, never oversped, and remained calm even in traffic jams near Devprayag. Best tour operator for Uttarakhand.</p>
+            </blockquote>
+            <span class="review-more">See all reviews on Google ↗</span>
+          </figure>
+        </a>
         <div class="sec-block" style="border-top:none">
           <h2>Overview</h2>
           <p class="lede">The Do Dham — Kedarnath and Badrinath — is a shorter, focused version of the Char Dham circuit for travellers with limited time. Starting and ending in Delhi or Dehradun, Vardaan takes care of every permit, stay, and meal so your family can give itself fully to darshan. We pace the journey gently for elders, support you at altitude, and keep certified Garhwali guides with you throughout.</p>
