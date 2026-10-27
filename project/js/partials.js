@@ -1,7 +1,7 @@
 /* Vardaan Tour — shared header / footer / floating WhatsApp, injected on every page. */
 (function () {
-  var PHONE_DISPLAY = "+91 99118 79555";
-  var PHONE_TEL = "+919911879555";
+  var PHONE_DISPLAY = "+91 93184 00926";
+  var PHONE_TEL = "+919318400926";
   var WHATSAPP_URL = "https://wa.me/919318400926?text=Hi%20Vardaan%20team,%20I'm%20interested%20in%20learning%20more%20about%20your%20tour%20packages.";
 
   var ICON = {
