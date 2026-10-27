@@ -10,6 +10,14 @@
 
   gtag('config', 'AW-18515098438');
 </script>
+<!-- Event snippet for WhatsApp chat lead conversion -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="https://wa.me/"]');
+  if (!a) return;
+  gtag('event', 'conversion', {'send_to': 'AW-18515098438/55qICKuTrKsdEMb21_xE'});
+});
+</script>
 <!-- Event snippet for Website lead conversion page -->
 <script>
 function gtag_report_conversion(url) {

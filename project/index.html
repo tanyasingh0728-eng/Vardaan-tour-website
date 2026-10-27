@@ -10,6 +10,22 @@
 
   gtag('config', 'AW-18515098438');
 </script>
+<!-- Event snippet for phone call lead conversion -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+  if (!a || a.hasAttribute('onclick')) return;
+  gtag('event', 'conversion', {'send_to': 'AW-18515098438/t-mKCNqK-6YdEMb2l_xE'});
+});
+</script>
+<!-- Event snippet for WhatsApp chat lead conversion -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="https://wa.me/"]');
+  if (!a) return;
+  gtag('event', 'conversion', {'send_to': 'AW-18515098438/55qICKuTrKsdEMb21_xE'});
+});
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vardaan Tour — Sacred Himalayan pilgrimages in Uttarakhand</title>
